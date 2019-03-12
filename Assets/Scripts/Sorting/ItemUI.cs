@@ -42,4 +42,12 @@ public class ItemUI : MonoBehaviour
         StrenghtTxt.text = item.Strength.ToString();
         Image.sprite = item.Image;
     }
+
+    public void PopulateWithScriptableItem(ItemScriptableObject item)
+    {
+        NameTxt.text = item.Name;
+        QualityTxt.text = item.Quality.ToString();
+        StrenghtTxt.text = item.Strength.ToString();
+        Image.sprite = item.Image;
+    }
 }
